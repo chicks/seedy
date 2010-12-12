@@ -22,7 +22,6 @@ module Seedy
       def build(user, team, account)
         opportunity = Opportunities.new
         opportunity.associate(user,team,account)
-        puts opportunity
         opportunity
       end
     end

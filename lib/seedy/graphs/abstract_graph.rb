@@ -45,6 +45,7 @@ module Seedy
     
     def create_user
       user = Users.build
+      puts user.to_sql
       buffer << user
       add(:users, user)
     end

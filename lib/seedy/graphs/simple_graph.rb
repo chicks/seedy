@@ -26,7 +26,7 @@ class SimpleGraph < AbstractGraph
     create_opportunities
     create_calls
     create_leads
-    Seedy::DatabaseBuffer.flush
+    @@buffer.flush
   end
   
 end

@@ -12,7 +12,7 @@ module Seedy
       :assigned_user_id => :association,
       :team_id => :association,
       :duration_hours => :duration,
-      :durection_minutes => :duration,
+      :duration_minutes => :duration,
       :date_start => :date_time,
       :status => :status,
       :direction => :direction,
