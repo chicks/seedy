@@ -38,7 +38,7 @@ module Seedy
     def quote(object)
       case object
       when String:
-        return "'#{object}'"
+        return "'#{object.gsub!(/\''/,'')}'"
       when Fixnum:
         return object
       when Array:
