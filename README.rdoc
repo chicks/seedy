@@ -1,6 +1,6 @@
 = seedy
 
-Description goes here.
+Seed databases with a Quickness(tm).
 
 == Contributing to seedy
  
