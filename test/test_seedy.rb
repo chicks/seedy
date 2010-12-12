@@ -1,7 +1,18 @@
 require 'helper'
 
 class TestSeedy < Test::Unit::TestCase
-  should "probably rename this file and start testing for real" do
-    flunk "hey buddy, you should probably rename this file and start testing for real"
+  
+  context "A Seedy Instance" do
+    setup do
+      Seedy.connect("localhost", "ibm", "ibm", "ibm")
+    end
+
+    should "create a User object graph when SimpleGraph#new" do
+      Seedy::SimpleGraph.new
+    end
+
   end
+  
+  
+  
 end
