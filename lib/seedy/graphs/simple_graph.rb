@@ -13,9 +13,7 @@ class SimpleGraph < AbstractGraph
     :email_addresses => 80
   }
   
-  
-  
-  @@buffer  = Seedy::AbstractBuffer
+  @@buffer  = Seedy::DatabaseBuffer
   
   # Creates a new user record, and all the dependent records listed above
   def initialize()    

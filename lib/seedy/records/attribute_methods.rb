@@ -75,7 +75,7 @@ module Seedy
     end
     
     def clear_errors
-      @errors = Set.new
+      @errors = ::Set.new
     end
     
     # Generates get/set methods for keys in the attributes hash

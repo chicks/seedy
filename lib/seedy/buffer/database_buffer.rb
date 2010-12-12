@@ -1,6 +1,6 @@
 module Seedy
   class DatabaseBuffer < AbstractBuffer
-    @@limit  = 2
+    @@limit  = 1000
     class << self
       def flush
         begin_db_transaction
