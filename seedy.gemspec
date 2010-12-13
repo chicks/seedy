@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{seedy}
-  s.version = "0.6.5"
+  s.version = "0.6.6"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Carl Hicks"]
@@ -54,9 +54,7 @@ Gem::Specification.new do |s|
     "lib/seedy/generators/website.rb",
     "lib/seedy/graph.rb",
     "lib/seedy/graphs/abstract_graph.rb",
-    "lib/seedy/graphs/instance_methods.rb",
     "lib/seedy/graphs/simple_graph.rb",
-    "lib/seedy/graphs/user_graph.rb",
     "lib/seedy/random.rb",
     "lib/seedy/record.rb",
     "lib/seedy/records/accounts.rb",
