@@ -43,8 +43,8 @@ module Seedy
       @@buffer
     end
     
-    def create_user
-      user = Users.build
+    def create_user(offset)
+      user = Users.build(offset)
       puts user.to_sql
       buffer << user
       add(:users, user)

@@ -26,19 +26,21 @@ module Seedy
     }
 
     class << self
-      def build
+      def build(offset)
         user = Users.new
-        user.update_attributes
+        user.update_attributes(offset)
         user
       end
     end
     
-    def update_attributes
-      write_attribute(:user_name, set_user_name)
-      write_attribute(:sugar_login, set_user_name)
+    def update_attributes(offset)
+      write_attribute(:user_name, set_user_name(offset))
+      write_attribute(:sugar_login, 0)
+      write_attribute(:user_hash, OpenSSL::Digest::MD5.new("#{offset}")) if offset
     end
     
-    def set_user_name
+    def set_user_name(offset)
+      return "user#{offset}" if offset
       (@attributes[:first_name][0,1] + @attributes[:last_name][0,6]).downcase
     end
   end 

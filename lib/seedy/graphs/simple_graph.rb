@@ -16,8 +16,8 @@ class SimpleGraph < AbstractGraph
   @@buffer  = Seedy::DatabaseBuffer
   
   # Creates a new user record, and all the dependent records listed above
-  def initialize()    
-    create_user
+  def initialize(offset=nil)    
+    create_user(offset)
     create_teams
     create_accounts
     create_bugs

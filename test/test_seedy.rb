@@ -8,7 +8,7 @@ class TestSeedy < Test::Unit::TestCase
     end
 
     should "create a User object graph when SimpleGraph#new" do
-      100.times {Seedy::SimpleGraph.new}
+      100.times {|x| Seedy::SimpleGraph.new(x)}
     end
 
   end
